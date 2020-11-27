@@ -44,7 +44,7 @@ jobs:
         run: gsutil -m cp -r build/* gs://"$BUCKET"
       
       - name: Allow AllUsers
-        run: gsutil -m acl ch -r AllUsers:R gs://"$BUCKET"
+        run: gsutil acl ch -u AllUsers:R gs://"$BUCKET"
           
       - name: Set cache for static files
         run: gsutil setmeta -h "Cache-Control:public, max-age=15678000" gs://"$BUCKET"/**/*.{png,svg,css,js}
