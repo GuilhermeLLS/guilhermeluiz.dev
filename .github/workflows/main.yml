@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 env:
-  bucket: guilhermeluiz.dev
+  BUCKET: guilhermeluiz.dev
 
 jobs:
   # This workflow contains a single job called "build"
@@ -42,6 +42,8 @@ jobs:
           
       - name: See files
         run: ls
+      - name: Echo var
+        run: echo $BUCKET
       - name: Upload files to bucket
         run: gsutil -m cp -r build/* gs://"$BUCKET"
       
