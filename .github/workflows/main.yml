@@ -40,16 +40,12 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
           
-      - name: See files
-        run: ls
-      - name: Echo var
-        run: echo $BUCKET
       - name: Upload files to bucket
         run: gsutil -m cp -r build/* gs://"$BUCKET"
       
       - name: Allow AllUsers
-        run: gsutil -m acl ch -R AllUsers:R "gs://$BUCKET"
-        
+        run: gsutil -m acl ch -r AllUsers:R gs://"$BUCKET"
+          
       - name: Set cache for static files
         run: gsutil setmeta -h "Cache-Control:public, max-age=15678000" gs://"$BUCKET"/**/*.{png,svg,css,js}
       
