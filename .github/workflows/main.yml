@@ -40,6 +40,8 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
           
+      - name: See files
+        run: ls
       - name: Upload files to bucket
         run: gsutil -m cp -r build/* gs://"$BUCKET"
       
