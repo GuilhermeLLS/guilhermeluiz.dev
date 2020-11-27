@@ -1,0 +1,31 @@
+.accordionBox {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: auto;
+    background-color: yellow;
+    border-radius: 4px;
+    transition: all .1s ease;
+}
+
+.accordionArrow {
+    fill: red;
+}
+
+.accordionArrowOpen {
+    transform: rotate(180deg);
+}
+
+.accordionTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 10px 10px 15px;
+}
+
+.accordionText {
+    height: 100%;
+    border-top: 1px solid red;
+    margin: 10px 10px 10px 15px;
+    padding-top: 10px;
+}
