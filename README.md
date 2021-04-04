@@ -1,46 +1,79 @@
-# Getting Started with Create React App
+# ReScript / NextJS Starter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a NextJS based template with following setup:
 
-## Available Scripts
+- Full Tailwind v2 config & basic css scaffold (+ production setup w/ purge-css & cssnano)
+- [ReScript](https://rescript-lang.org) + React
+- Some ReScript Bindings for Next to get you started
+- Preconfigured Dependencies: `@rescript/react`
 
-In the project directory, you can run:
+## Development
 
-### `yarn start`
+Run ReScript in dev mode:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+npm run res:start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+In another tab, run the Next dev server:
 
-### `yarn test`
+```
+npm run dev
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Useful commands
 
-### `yarn build`
+Build CSS seperately via `postcss` (useful for debugging)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+# Devmode
+npx postcss styles/main.css -o test.css
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Production
+NODE_ENV=production npx postcss styles/main.css -o test.css
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Test production setup with Next
 
-### `yarn eject`
+```
+# Make sure to uncomment the `target` attribute in `now.json` first, before you run this:
+npm run build
+PORT=3001 npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Tips
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Don't be afraid to adapt your Next bindings
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+We ship some general bindings for `NextJS`, but we try to keep them simple. Some use-cases and APIs might not be reflected yet, so feel free to adapt the file as you see fit for your app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+As with every file fork, if you keep the changes git trackable, it's pretty straight-forward to pull in upstream changes later on.
 
-## Learn More
+### Filenames with special characters
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ReScript > 8.3 now supports filenames with special characters: e.g. `pages/blog/[slug].res`.
+If you can't upgrade yet, you can create a e.g. `pages/blog/[slug].js` file, a `re_pages/blog_slug.re` file and then reexport the React component within the `[slug].js` file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+We recommend upgrading to the newest ReScript (bs-platform) version as soon as possible to get the best experience for Next!
+
+### Fast Refresh & ReScript
+
+Make sure to create interface files (`.resi`) for each `page/*.res` file.
+
+Fast Refresh requires you to **only export React components**, and it's easy to unintenionally export other values than that.
+
+For the 100% "always-works-method", we recommend putting your ReScript components in e.g. the `src` directory, and re-export them in plain `pages/*.js` files instead (check out the templates initial `pages` directory to see how we forward our React components to make sure we fulfill the Fast-Refresh naming conventions).
+
+## Q & A
+
+### Why are the generated `.js` files tracked in git?
+
+In ReScript, it's a good habit to keep track of the actual JS output the compiler emits. It allows quick sanity checking if we made any changes that actually have an impact on the resulting JS code (especially when doing major compiler upgrades, it's a good way to verify if production code will behave the same way as before the upgrade).
+
+This will also make it easier for your Non-ReScript coworkers to read and understand the changes in Github PRs, and call you out when you are writing inefficient code.
+
+If you completely disagree with this, you can delete the emitted `.js` files within the `src` directory and add `src/**/*.js` in your `.gitignore` of course.
+
+### How trustworthy is this template?
+
+This template was created through our learnings of building the [ReScript Documentation Platform](https://rescript-lang.org) (which is built in NextJS), and is maintained by one of the ReScript core team members. It irregularly receives updates depending on demand and urgency (e.g. important changes in the `Next.res` bindings, or package dependencies).
