@@ -7,8 +7,14 @@ S /home/guilherme/Documentos/personal-projects/guilhermeluiz.dev/node_modules/@r
 B /home/guilherme/Documentos/personal-projects/guilhermeluiz.dev/node_modules/@rescript/react/lib/ocaml
 S src
 B lib/bs/src
-S src/layouts
-B lib/bs/src/layouts
 S src/bindings
 B lib/bs/src/bindings
+S src/components/MyWork
+B lib/bs/src/components/MyWork
+S src/components/Footer
+B lib/bs/src/components/Footer
+S src/components/AboutMe
+B lib/bs/src/components/AboutMe
+S src/components/Navbar
+B lib/bs/src/components/Navbar
 ####BSB GENERATED: NO EDIT}
