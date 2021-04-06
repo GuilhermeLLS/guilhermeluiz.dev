@@ -17,7 +17,7 @@ My main stack is React, JavaScript/Typescript and NodeJs, but I'm always happy a
 ")}
           </p>
           <div className="flex items-center mt-6 -mx-2">
-            <a className="mx-2" href="#">
+            <a className="mx-2" href="https://twitter.com/gluizls" target="_blank">
               <svg
                 className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400"
                 xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ My main stack is React, JavaScript/Typescript and NodeJs, but I'm always happy a
                 />
               </svg>
             </a>
-            <a className="mx-2" href="#">
+            <a className="mx-2" href="https://www.linkedin.com/in/guilherme-luiz-lara-silva-9a7158162/" target="_blank">
               <svg
                 className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400"
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ My main stack is React, JavaScript/Typescript and NodeJs, but I'm always happy a
                 />
               </svg>
             </a>
-            <a className="mx-2" href="#">
+            <a className="mx-2" href="https://github.com/GuilhermeLLS" target="_blank">
               <svg
                 className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400"
                 xmlns="http://www.w3.org/2000/svg"

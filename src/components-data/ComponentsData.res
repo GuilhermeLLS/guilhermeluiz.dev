@@ -1,9 +1,3 @@
-let iconLinks: array<string> = [ "https://github.com/GuilhermeLLS", "https://www.linkedin.com/in/guilherme-luiz-lara-silva-9a7158162/", "https://twitter.com/gluizls"]
-
-
-let my_Img = "https://i.imgur.com/oWoxvzl.jpg"
-
-
 type productType = {
     img: {
         "src": string,
@@ -16,26 +10,26 @@ type productType = {
 let productData: array<productType> = [
     {
         img: {
-            "src": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80",
-            "alt": "Solidario",
+            "src": "https://imgur.com/lFqiH5B.png",
+            "alt": `Solidário`,
         },
-        title: "Ajuda para ONGs: Solidario",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus"
+        title: `Ajuda para ONGs: Solidário`,
+        description: `Solidário is a platform to connect the public to NOPs. Many people do not donate more often due to the fact that they do not know any reliable NOPs or social projects. Solidário is here to solve this trust problem.`
     },
     {
         img: {
-            "src": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80",
-            "alt": "Redação Eficiente",
+            "src": "https://imgur.com/IDSIOUS.png",
+            "alt": `Redação Eficiente`,
         },
-        title: "Redação Eficiente",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus"
+        title: `Redação Eficiente`,
+        description: `Redação Eficiente is a blog and a text correction and language consultancy service. There you can find the linguistic services that fits your necessities, such as TCC Corrections, ENEM corrections and others.`
     },
     {
         img: {
-            "src": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80",
+            "src": "https://imgur.com/kKpDEn3.png",
             "alt": "React",
         },
         title: "CRA Template Kingdom",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus"
+        description: "This is a bootstrap template for Create React App made by T10 for the community. This template has some built in features such as authentication, E2E tests, form validations and much more to make your life easier."
     },
 ]

@@ -22,13 +22,13 @@ function Navbar(Props) {
                 }, React.createElement("div", {
                       className: "flex items-center justify-between"
                     }, React.createElement("div", undefined, React.createElement("a", {
-                              className: "text-2xl font-bold text-gray-800 dark:text-white md:text-2xl hover:text-gray-700 dark:hover:text-gray-300",
+                              className: "text-2xl font-bold text-gray-800 dark:text-white md:text-2xl hover:text-indigo-500 dark:hover:text-indigo-200",
                               href: "#"
-                            }, "Brand")), React.createElement("div", {
+                            }, "GuilhermeLLS")), React.createElement("div", {
                           className: "flex md:hidden"
                         }, React.createElement("button", {
                               "aria-label": "toggle menu",
-                              className: "text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400",
+                              className: "text-gray-500 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-200 focus:outline-none focus:text-indigo-500 dark:focus:text-indigo-400",
                               onClick: onClick
                             }, React.createElement("svg", {
                                   className: "w-6 h-6 fill-current",

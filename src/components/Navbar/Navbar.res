@@ -14,14 +14,14 @@ let make = () => {
       <div className="flex items-center justify-between">
         <div>
           <a
-            className="text-2xl font-bold text-gray-800 dark:text-white md:text-2xl hover:text-gray-700 dark:hover:text-gray-300"
+            className="text-2xl font-bold text-gray-800 dark:text-white md:text-2xl hover:text-indigo-500 dark:hover:text-indigo-200"
             href="#">
-            {React.string("Brand")}
+            {React.string("GuilhermeLLS")}
           </a>
         </div>
         <div className="flex md:hidden">
           <button
-            className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+            className="text-gray-500 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-200 focus:outline-none focus:text-indigo-500 dark:focus:text-indigo-400"
             ariaLabel="toggle menu"
             onClick>
             <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
