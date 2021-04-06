@@ -8,5 +8,5 @@ import BlogRes from "src/Blog.js";
 // If you don't do this, your Fast-Refresh will
 // not work!
 export default function Blog(props) {
-  return <BlogRes {...props}/>;
+  return <BlogRes {...props} />;
 }

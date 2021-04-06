@@ -16,6 +16,7 @@ export default class MyDocument extends Document {
             name="description"
             content="Guilherme Luiz | Software Engineer"
           />
+          <title>Guilherme Luiz | Software Engineer</title>
         </Head>
         <body>
           <Main />
