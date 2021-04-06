@@ -14,19 +14,19 @@ function AboutMe(Props) {
                           className: "lg:w-1/2"
                         }, React.createElement("h2", {
                               className: "text-3xl font-bold text-gray-800 dark:text-gray-100"
-                            }, "Who I am"), React.createElement("p", {
-                              className: "mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md"
-                            }, "Hi I am jane, software engineer", React.createElement("a", {
+                            }, "About me"), React.createElement("p", {
+                              className: "mt-4 text-gray-500 dark:text-gray-400 lg:max-w-xl"
+                            }, "Hi I am Guilherme, software engineer", React.createElement("a", {
                                   className: "font-bold text-indigo-600 dark:text-indigo-400",
                                   href: "https://t10.digital",
                                   target: "_blank"
-                                }, " @T10"), "I'm a tech enthusiast and passionate about programming as a hobby. I have started my professional software engineer journey building crawlers with Nodejs and Typescript. Nowadays, I build apps with React, NodeJs and Typescript. I love to explore new technologies and to follow along the latest trends. My favorite hobbies are hanging out with friends, gaming online, playing and watching soccer.\nMy main stack is React, JavaScript/Typescript and NodeJs, but I'm always happy and excited to learn something new. Lately, I've been trying some Elixir with Phoenix and some Rescript. I'm also into SEO reliant development, performance and great user experience are a must for me.\n"), React.createElement("div", {
+                                }, " @T10"), ". I'm a tech enthusiast and passionate about programming as a hobby. I have started my professional software engineer journey building crawlers with Nodejs and Typescript. Nowadays, I build apps with React, NodeJs and Typescript. I love to explore new technologies and to follow along the latest trends. My favorite hobbies are hanging out with friends, gaming online, playing and watching soccer.\nMy main stack is React, JavaScript/Typescript and NodeJs, but I'm always happy and excited to learn something new. Lately, I've been trying some Elixir with Phoenix and some Rescript. I'm also into SEO reliant development, performance and great user experience are a must for me.\n"), React.createElement("div", {
                               className: "flex items-center mt-6 -mx-2"
                             }, React.createElement("a", {
                                   className: "mx-2",
                                   href: "#"
                                 }, React.createElement("svg", {
-                                      className: "w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400",
+                                      className: "w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400",
                                       viewBox: "0 0 512 512",
                                       xmlns: "http://www.w3.org/2000/svg"
                                     }, React.createElement("path", {
@@ -35,16 +35,7 @@ function AboutMe(Props) {
                                   className: "mx-2",
                                   href: "#"
                                 }, React.createElement("svg", {
-                                      className: "w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400",
-                                      viewBox: "0 0 512 512",
-                                      xmlns: "http://www.w3.org/2000/svg"
-                                    }, React.createElement("path", {
-                                          d: "M426.8 64H85.2C73.5 64 64 73.5 64 85.2v341.6c0 11.7 9.5 21.2 21.2 21.2H256V296h-45.9v-56H256v-41.4c0-49.6 34.4-76.6 78.7-76.6 21.2 0 44 1.6 49.3 2.3v51.8h-35.3c-24.1 0-28.7 11.4-28.7 28.2V240h57.4l-7.5 56H320v152h106.8c11.7 0 21.2-9.5 21.2-21.2V85.2c0-11.7-9.5-21.2-21.2-21.2z"
-                                        }))), React.createElement("a", {
-                                  className: "mx-2",
-                                  href: "#"
-                                }, React.createElement("svg", {
-                                      className: "w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400",
+                                      className: "w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400",
                                       viewBox: "0 0 512 512",
                                       xmlns: "http://www.w3.org/2000/svg"
                                     }, React.createElement("path", {
@@ -53,7 +44,7 @@ function AboutMe(Props) {
                                   className: "mx-2",
                                   href: "#"
                                 }, React.createElement("svg", {
-                                      className: "w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400",
+                                      className: "w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400",
                                       viewBox: "0 0 512 512",
                                       xmlns: "http://www.w3.org/2000/svg"
                                     }, React.createElement("path", {
@@ -61,13 +52,13 @@ function AboutMe(Props) {
                                         }))))), React.createElement("div", {
                           className: "mt-8 lg:mt-0 lg:w-1/2"
                         }, React.createElement("div", {
-                              className: "flex items-center justify-center lg:justify-end"
+                              className: "flex items-center justify-center lg:justify-start"
                             }, React.createElement("div", {
                                   className: "max-w-lg"
                                 }, React.createElement("img", {
                                       className: "object-cover object-center w-full h-64 rounded-md shadow",
-                                      alt: "",
-                                      src: "https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                      alt: "guilherme luiz",
+                                      src: "https://i.imgur.com/oWoxvzl.jpg"
                                     })))))));
 }
 

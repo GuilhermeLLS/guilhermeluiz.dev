@@ -42,12 +42,12 @@ function Navbar(Props) {
                     }, React.createElement("div", {
                           className: "flex flex-col md:flex-row md:mx-6"
                         }, React.createElement("a", {
-                              className: "my-1 text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0",
-                              href: "#"
-                            }, "Contact"), React.createElement("a", {
-                              className: "my-1 text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0",
-                              href: "#"
-                            }, "About")))));
+                              className: "my-1 text-lg underline font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0",
+                              href: "#about-me"
+                            }, "About"), React.createElement("a", {
+                              className: "my-1 text-lg underline font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0",
+                              href: "#my-work"
+                            }, "My Work")))));
 }
 
 var make = Navbar;

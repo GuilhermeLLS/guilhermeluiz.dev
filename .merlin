@@ -7,8 +7,12 @@ S /home/guilherme/Documentos/personal-projects/guilhermeluiz.dev/node_modules/@r
 B /home/guilherme/Documentos/personal-projects/guilhermeluiz.dev/node_modules/@rescript/react/lib/ocaml
 S src
 B lib/bs/src
+S src/components-data
+B lib/bs/src/components-data
 S src/bindings
 B lib/bs/src/bindings
+S src/components/DarkModeButton
+B lib/bs/src/components/DarkModeButton
 S src/components/MyWork
 B lib/bs/src/components/MyWork
 S src/components/Footer

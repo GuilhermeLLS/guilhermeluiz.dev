@@ -5,9 +5,10 @@ import * as Footer from "./components/Footer/Footer.js";
 import * as MyWork from "./components/MyWork/MyWork.js";
 import * as Navbar from "./components/Navbar/Navbar.js";
 import * as AboutMe from "./components/AboutMe/AboutMe.js";
+import * as DarkModeButton from "./components/DarkModeButton/DarkModeButton.js";
 
 function $$default(param) {
-  return React.createElement(React.Fragment, undefined, React.createElement(Navbar.make, {}), React.createElement(AboutMe.make, {}), React.createElement(MyWork.make, {}), React.createElement(Footer.make, {}));
+  return React.createElement(React.Fragment, undefined, React.createElement(Navbar.make, {}), React.createElement(AboutMe.make, {}), React.createElement(MyWork.make, {}), React.createElement(Footer.make, {}), React.createElement(DarkModeButton.make, {}));
 }
 
 export {

@@ -34,14 +34,14 @@ let make = () => {
       <div className={`items-center md:flex ${openMenu ? "block" : "hidden"}`}>
         <div className="flex flex-col md:flex-row md:mx-6">
           <a
-            className="my-1 text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
-            href="#">
-            {React.string("Contact")}
+            className="my-1 text-lg underline font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
+            href="#about-me">
+            {React.string("About")}
           </a>
           <a
-            className="my-1 text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
-            href="#">
-            {React.string("About")}
+            className="my-1 text-lg underline font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
+            href="#my-work">
+            {React.string("My Work")}
           </a>
         </div>
       </div>

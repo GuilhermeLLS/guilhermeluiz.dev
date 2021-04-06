@@ -1,3 +1,3 @@
 let default = (): React.element => {
-  <> <Navbar /> <AboutMe /> <MyWork /> <Footer /> </>
+  <>  <Navbar /> <AboutMe /> <MyWork /> <Footer /> <DarkModeButton /> </>
 }
