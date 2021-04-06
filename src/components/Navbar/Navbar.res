@@ -1,3 +1,5 @@
+module Link = Next.Link
+
 @react.component
 let make = () => {
   let (openMenu, setMenuOpen) = React.useState(_ => false)
@@ -43,6 +45,12 @@ let make = () => {
             href="#my-work">
             {React.string("My Work")}
           </a>
+          <Link href="/blog">
+            <a
+              className="my-1 text-lg underline font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
+              {React.string("Blog")}
+            </a>
+          </Link>
         </div>
       </div>
     </div>

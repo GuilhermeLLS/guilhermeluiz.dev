@@ -2,6 +2,7 @@
 
 import * as Curry from "bs-platform/lib/es6/curry.js";
 import * as React from "react";
+import Link from "next/link";
 
 function Navbar(Props) {
   var match = React.useState(function () {
@@ -47,7 +48,12 @@ function Navbar(Props) {
                             }, "About"), React.createElement("a", {
                               className: "my-1 text-lg underline font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0",
                               href: "#my-work"
-                            }, "My Work")))));
+                            }, "My Work"), React.createElement(Link, {
+                              href: "/blog",
+                              children: React.createElement("a", {
+                                    className: "my-1 text-lg underline font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
+                                  }, "Blog")
+                            })))));
 }
 
 var make = Navbar;
