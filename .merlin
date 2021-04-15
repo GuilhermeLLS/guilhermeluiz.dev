@@ -17,6 +17,8 @@ S src/components/MyWork
 B lib/bs/src/components/MyWork
 S src/components/Footer
 B lib/bs/src/components/Footer
+S src/components/IconsSection
+B lib/bs/src/components/IconsSection
 S src/components/AboutMe
 B lib/bs/src/components/AboutMe
 S src/components/Sidebar

@@ -15,7 +15,7 @@ let make = () => {
     document["getElementsByTagName"]("BODY")[0]["classList"]["add"](invertTheme(currentTheme))
   }
 
-  <div className="dark:text-white fixed bottom-6 right-6 lg:bottom-10 lg:right-10">
+  <div className="dark:text-white fixed bottom-6 right-6 lg:bottom-20 lg:right-10">
     <button onClick>
       {!dark
         ? <svg

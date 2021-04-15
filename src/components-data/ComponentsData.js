@@ -8,11 +8,11 @@ var productData = [
       alt: "Solidário"
     },
     title: "Ajuda para ONGs: Solidário",
-    description: "Solidário is a platform to connect the public to NOPs. Many people do not donate more often due to the fact that they do not know any reliable NOPs or social projects. Solidário is here to solve this trust problem."
+    description: "Solidário is a platform to connect the public to NGOs. Many people do not donate more often due to the fact that they do not know any reliable NGOs or social projects. Solidário is here to solve this trust problem."
   },
   {
     img: {
-      src: "https://imgur.com/IDSIOUS.png",
+      src: "https://imgur.com/IDSIOUS.png&w=100&h=100",
       alt: "Redação Eficiente"
     },
     title: "Redação Eficiente",

@@ -28,7 +28,7 @@ function DarkModeButton(Props) {
     return Caml_array.get(document.getElementsByTagName("BODY"), 0).classList.add(invertTheme(currentTheme));
   };
   return React.createElement("div", {
-              className: "dark:text-white fixed bottom-6 right-6 lg:bottom-10 lg:right-10"
+              className: "dark:text-white fixed bottom-6 right-6 lg:bottom-20 lg:right-10"
             }, React.createElement("button", {
                   onClick: onClick
                 }, dark ? React.createElement("svg", {

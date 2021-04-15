@@ -9,7 +9,7 @@ function MyWork(Props) {
               className: "bg-white dark:bg-gray-800 text-base",
               id: "my-work"
             }, React.createElement("div", {
-                  className: "container px-6 py-6 mx-auto"
+                  className: "px-6 py-6 mx-auto"
                 }, React.createElement("h3", {
                       className: "text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4"
                     }, "My work"), React.createElement("div", {
@@ -24,11 +24,13 @@ function MyWork(Props) {
                                                 className: "text-3xl font-bold text-gray-800 uppercase dark:text-white"
                                               }, item.title), React.createElement("p", {
                                                 className: "mt-1 text-sm text-gray-600 dark:text-gray-400"
-                                              }, item.description)), React.createElement("img", {
-                                            className: "object-cover w-full h-48 mt-2",
-                                            alt: item.img.alt,
-                                            src: item.img.src
-                                          }));
+                                              }, item.description)), React.createElement("div", {
+                                            className: "flex justify-center"
+                                          }, React.createElement("img", {
+                                                className: "object-cover w-56 h-52 mt-2",
+                                                alt: item.img.alt,
+                                                src: item.img.src
+                                              })));
                           })))));
 }
 
