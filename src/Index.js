@@ -3,12 +3,16 @@
 import * as React from "react";
 import * as Footer from "./components/Footer/Footer.js";
 import * as MyWork from "./components/MyWork/MyWork.js";
-import * as Navbar from "./components/Navbar/Navbar.js";
 import * as AboutMe from "./components/AboutMe/AboutMe.js";
+import * as Sidebar from "./components/Sidebar/Sidebar.js";
 import * as DarkModeButton from "./components/DarkModeButton/DarkModeButton.js";
 
 function $$default(param) {
-  return React.createElement(React.Fragment, undefined, React.createElement(Navbar.make, {}), React.createElement(AboutMe.make, {}), React.createElement(MyWork.make, {}), React.createElement(Footer.make, {}), React.createElement(DarkModeButton.make, {}));
+  return React.createElement("main", {
+              className: "flex flex-col md:flex-row"
+            }, React.createElement(Sidebar.make, {}), React.createElement("div", {
+                  className: "flex flex-col md:mt-12 md:absolute md:left-80"
+                }, React.createElement(AboutMe.make, {}), React.createElement(MyWork.make, {}), React.createElement(Footer.make, {}), React.createElement(DarkModeButton.make, {})));
 }
 
 export {

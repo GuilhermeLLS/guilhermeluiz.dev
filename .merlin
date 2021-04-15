@@ -19,6 +19,6 @@ S src/components/Footer
 B lib/bs/src/components/Footer
 S src/components/AboutMe
 B lib/bs/src/components/AboutMe
-S src/components/Navbar
-B lib/bs/src/components/Navbar
+S src/components/Sidebar
+B lib/bs/src/components/Sidebar
 ####BSB GENERATED: NO EDIT}
