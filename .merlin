@@ -23,4 +23,6 @@ S src/components/AboutMe
 B lib/bs/src/components/AboutMe
 S src/components/Sidebar
 B lib/bs/src/components/Sidebar
+S src/components/Introduction
+B lib/bs/src/components/Introduction
 ####BSB GENERATED: NO EDIT}

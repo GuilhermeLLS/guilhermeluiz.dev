@@ -61,7 +61,7 @@ module TwitterIcon = {
 
 @react.component
 let make = (~theme: string) => {
-  <div className="flex items-center mt-6 -mx-2">
+  <div className="flex items-center -mx-2">
     <TwitterIcon url="https://twitter.com/gluizls" theme />
     <LinkedinIcon url="https://www.linkedin.com/in/guilherme-luiz-lara-silva-9a7158162/" theme />
     <GitHubIcon url="https://github.com/GuilhermeLLS" theme />
