@@ -1,6 +1,8 @@
 module Transition = {
   @module("@headlessui/react") @react.component
   external make: (
+    ~className: string=?,
+    ~\"as": string=?,
     ~appear: bool=?,
     ~show: bool,
     ~enter: string=?,

@@ -1,26 +1,23 @@
 module Link = Next.Link
 open HeadlessUi
+open PageContext
 
 @react.component
 let make = () => {
-  let (isShowing, setIsShowing) = React.useState(_ => false)
+  let {setCurrentPage} = React.useContext(PageContext.context)
   <>
-    <button onClick={evt => setIsShowing(isShowing => !isShowing)}>
-      {React.string("transition")}
-    </button>
-    <Transition
-      appear={true}
-      show={isShowing}
-      enter="transition-opacity duration-75"
-      enterFrom="opacity-0"
-      enterTo="opacity-100"
-      leave="transition-opacity duration-150"
-      leaveFrom="opacity-100"
-      leaveTo="opacity-0">
-      {React.string("Teste")}
-    </Transition>
     <section className="flex justify-center w-screen h-screen dark:bg-white bg-gray-800">
-      <div className="flex flex-col items-center self-center">
+      <Transition
+        className="flex flex-col items-center self-center"
+        \"as"="div"
+        appear={true}
+        show={true}
+        enter="transform transition duration-700"
+        enterFrom="opacity-0 scale-50"
+        enterTo="opacity-100 scale-100"
+        leave="transform duration-200 transition ease-in-out"
+        leaveFrom="opacity-100 scale-100 "
+        leaveTo="opacity-0 scale-95">
         <div className="flex flex-col">
           <span className="text-2xl font-bold text-white dark:text-gray-800 md:text-2xl">
             {React.string("Guilherme Luiz")}
@@ -30,16 +27,16 @@ let make = () => {
           </small>
         </div>
         <div className="flex flex-row">
-          <a
-            className="text-xl font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4"
-            href="#about-me">
+          <span
+            className="text-xl cursor-pointer font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4"
+            onClick={_ => setCurrentPage(_ => #about)}>
             {React.string("About")}
-          </a>
-          <a
-            className="text-xl font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4"
-            href="#my-work">
+          </span>
+          <span
+            className="text-xl cursor-pointer font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4"
+            onClick={_ => setCurrentPage(_ => #mywork)}>
             {React.string("My Work")}
-          </a>
+          </span>
           <Link href="/blog">
             <a
               className="text-xl font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4">
@@ -48,7 +45,7 @@ let make = () => {
           </Link>
         </div>
         <IconsSection theme="light" />
-      </div>
+      </Transition>
     </section>
   </>
 }

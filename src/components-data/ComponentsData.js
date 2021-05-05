@@ -7,7 +7,7 @@ var productData = [
       src: "https://imgur.com/lFqiH5B.png",
       alt: "Solidário"
     },
-    title: "Ajuda para ONGs: Solidário",
+    title: "Helping NGOs: Solidário",
     description: "Solidário is a platform to connect the public to NGOs. Many people do not donate more often due to the fact that they do not know any reliable NGOs or social projects. Solidário is here to solve this trust problem."
   },
   {

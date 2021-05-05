@@ -1,35 +1,32 @@
 @react.component
 let make = () => {
-  <section id="my-work" className="bg-white dark:bg-gray-800 text-base">
-    <div className="px-6 py-6 mx-auto">
-      <h3 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-        {React.string("My work")}
-      </h3>
-      <div className="flex md:flex-row flex-col">
-        {React.array(
-          Belt_Array.map(ComponentsData.productData, item => {
-            <div
-              key={item.title}
-              className="max-w-xs mt-4 md:mt-0 mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
-              <div className="px-4 py-2">
-                <h1 className="text-3xl font-bold text-gray-800 uppercase dark:text-white">
-                  {React.string(item.title)}
-                </h1>
-                <p className="mt-1 text-sm text-gray-600 dark:text-gray-400">
+  <PageWrapper>
+    <h3 className="text-3xl font-bold text-gray-800 mb-4">
+      {React.string("My work")}
+    </h3>
+    <span className="text-gray-500">
+      {React.string(
+        "This is a preview of my independent projects. Besides the ones listed below, you can check some of my projects developed in the work environment in my resume.",
+      )}
+    </span>
+    <div className="flex flex-col">
+      {React.array(
+        Belt_Array.map(ComponentsData.productData, item => {
+          <div key={item.title} className="flex flex-col rounded-2xl shadow-lg mb-4">
+            <div className="p-4">
+              <span className="text-lg font-bold text-gray-800 uppercase">
+                {React.string(item.title)}
+              </span>
+              <div className="flex flex-col md:flex-row">
+                <img className="w-24 h-20 m-2" src={item.img["src"]} alt={item.img["alt"]} />
+                <p className="mt-1 text-sm text-gray-600">
                   {React.string(item.description)}
                 </p>
               </div>
-              <div className="flex justify-center">
-                <img
-                  className="object-cover w-56 h-52 mt-2"
-                  src={item.img["src"]}
-                  alt={item.img["alt"]}
-                />
-              </div>
             </div>
-          }),
-        )}
-      </div>
+          </div>
+        }),
+      )}
     </div>
-  </section>
+  </PageWrapper>
 }

@@ -3,34 +3,27 @@
 import * as Curry from "bs-platform/lib/es6/curry.js";
 import * as React from "react";
 import Link from "next/link";
+import * as PageContext from "../../contexts/PageContext/PageContext.js";
 import * as IconsSection from "../IconsSection/IconsSection.js";
 import * as React$1 from "@headlessui/react";
 
 function Introduction(Props) {
-  var match = React.useState(function () {
-        return false;
-      });
-  var setIsShowing = match[1];
-  return React.createElement(React.Fragment, undefined, React.createElement("button", {
-                  onClick: (function (evt) {
-                      return Curry._1(setIsShowing, (function (isShowing) {
-                                    return !isShowing;
-                                  }));
-                    })
-                }, "transition"), React.createElement(React$1.Transition, {
-                  appear: true,
-                  show: match[0],
-                  enter: "transition-opacity duration-75",
-                  enterFrom: "opacity-0",
-                  enterTo: "opacity-100",
-                  leave: "transition-opacity duration-150",
-                  leaveFrom: "opacity-100",
-                  leaveTo: "opacity-0",
-                  children: "Teste"
-                }), React.createElement("section", {
+  var match = React.useContext(PageContext.PageContext.context);
+  var setCurrentPage = match.setCurrentPage;
+  return React.createElement(React.Fragment, undefined, React.createElement("section", {
                   className: "flex justify-center w-screen h-screen dark:bg-white bg-gray-800"
-                }, React.createElement("div", {
-                      className: "flex flex-col items-center self-center"
+                }, React.createElement(React$1.Transition, {
+                      className: "flex flex-col items-center self-center",
+                      as: "div",
+                      appear: true,
+                      show: true,
+                      enter: "transform transition duration-700",
+                      enterFrom: "opacity-0 scale-50",
+                      enterTo: "opacity-100 scale-100",
+                      leave: "transform duration-200 transition ease-in-out",
+                      leaveFrom: "opacity-100 scale-100 ",
+                      leaveTo: "opacity-0 scale-95",
+                      children: null
                     }, React.createElement("div", {
                           className: "flex flex-col"
                         }, React.createElement("span", {
@@ -39,12 +32,20 @@ function Introduction(Props) {
                               className: "text-sm text-white dark:text-gray-800 text-center"
                             }, "Software Engineer.")), React.createElement("div", {
                           className: "flex flex-row"
-                        }, React.createElement("a", {
-                              className: "text-xl font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4",
-                              href: "#about-me"
-                            }, "About"), React.createElement("a", {
-                              className: "text-xl font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4",
-                              href: "#my-work"
+                        }, React.createElement("span", {
+                              className: "text-xl cursor-pointer font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4",
+                              onClick: (function (param) {
+                                  return Curry._1(setCurrentPage, (function (param) {
+                                                return "about";
+                                              }));
+                                })
+                            }, "About"), React.createElement("span", {
+                              className: "text-xl cursor-pointer font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4",
+                              onClick: (function (param) {
+                                  return Curry._1(setCurrentPage, (function (param) {
+                                                return "mywork";
+                                              }));
+                                })
                             }, "My Work"), React.createElement(Link, {
                               href: "/blog",
                               children: React.createElement("a", {
