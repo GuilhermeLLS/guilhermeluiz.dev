@@ -2,17 +2,20 @@ module.exports = {
   purge: {
     // Specify the paths to all of the template files in your project
     content: [
-      './src/components/**/*.res',
-      './src/layouts/**/*.res',
-      './src/*.res',
+      "./src/components/**/*.res",
+      "./src/layouts/**/*.res",
+      "./src/*.res",
     ],
     options: {
       safelist: ["html", "body"],
-    }
+    },
   },
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      spacing: {
+        216: "54rem",
+      },
     },
     /* Most of the time we customize the font-sizes,
      so we added the Tailwind default values here for
@@ -23,15 +26,15 @@ module.exports = {
       base: "1rem",
       lg: "1.125rem",
       xl: "1.25rem",
-      '2xl': "1.5rem",
-      '3xl': "1.875rem",
-      '4xl': "2.25rem",
-      '5xl': "3rem",
-      '6xl': "4rem"
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
     },
   },
   variants: {
-    width: ['responsive']
+    width: ["responsive"],
   },
-  plugins: []
-}
+  plugins: [],
+};

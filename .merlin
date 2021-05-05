@@ -11,16 +11,16 @@ S src/components-data
 B lib/bs/src/components-data
 S src/bindings
 B lib/bs/src/bindings
-S src/components/DarkModeButton
-B lib/bs/src/components/DarkModeButton
+S src/contexts/PageContext
+B lib/bs/src/contexts/PageContext
 S src/components/MyWork
 B lib/bs/src/components/MyWork
-S src/components/Footer
-B lib/bs/src/components/Footer
 S src/components/IconsSection
 B lib/bs/src/components/IconsSection
 S src/components/AboutMe
 B lib/bs/src/components/AboutMe
-S src/components/Sidebar
-B lib/bs/src/components/Sidebar
+S src/components/Introduction
+B lib/bs/src/components/Introduction
+S src/components/PageWrapper
+B lib/bs/src/components/PageWrapper
 ####BSB GENERATED: NO EDIT}

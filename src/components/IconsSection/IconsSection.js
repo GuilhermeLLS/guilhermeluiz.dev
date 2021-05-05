@@ -65,7 +65,7 @@ function IconsSection$TwitterIcon(Props) {
 function IconsSection(Props) {
   var theme = Props.theme;
   return React.createElement("div", {
-              className: "flex items-center mt-6 -mx-2"
+              className: "flex items-center -mx-2"
             }, React.createElement(IconsSection$TwitterIcon, {
                   url: "https://twitter.com/gluizls",
                   theme: theme

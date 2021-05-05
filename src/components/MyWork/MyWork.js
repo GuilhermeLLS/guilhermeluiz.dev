@@ -2,36 +2,36 @@
 
 import * as React from "react";
 import * as Belt_Array from "bs-platform/lib/es6/belt_Array.js";
+import * as PageWrapper from "../PageWrapper/PageWrapper.js";
 import * as ComponentsData from "../../components-data/ComponentsData.js";
 
 function MyWork(Props) {
-  return React.createElement("section", {
-              className: "bg-white dark:bg-gray-800 text-base",
-              id: "my-work"
-            }, React.createElement("div", {
-                  className: "px-6 py-6 mx-auto"
-                }, React.createElement("h3", {
-                      className: "text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4"
-                    }, "My work"), React.createElement("div", {
-                      className: "flex md:flex-row flex-col"
-                    }, Belt_Array.map(ComponentsData.productData, (function (item) {
-                            return React.createElement("div", {
-                                        key: item.title,
-                                        className: "max-w-xs mt-4 md:mt-0 mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800"
-                                      }, React.createElement("div", {
-                                            className: "px-4 py-2"
-                                          }, React.createElement("h1", {
-                                                className: "text-3xl font-bold text-gray-800 uppercase dark:text-white"
-                                              }, item.title), React.createElement("p", {
-                                                className: "mt-1 text-sm text-gray-600 dark:text-gray-400"
-                                              }, item.description)), React.createElement("div", {
-                                            className: "flex justify-center"
+  return React.createElement(PageWrapper.make, {
+              children: null
+            }, React.createElement("h3", {
+                  className: "text-3xl font-bold text-gray-800 mb-4"
+                }, "My work"), React.createElement("span", {
+                  className: "text-gray-500"
+                }, "This is a preview of my independent projects. Besides the ones listed below, you can check some of my projects developed in the work environment in my resume."), React.createElement("div", {
+                  className: "flex flex-col"
+                }, Belt_Array.map(ComponentsData.productData, (function (item) {
+                        return React.createElement("div", {
+                                    key: item.title,
+                                    className: "flex flex-col rounded-2xl shadow-lg mb-4"
+                                  }, React.createElement("div", {
+                                        className: "p-4"
+                                      }, React.createElement("span", {
+                                            className: "text-lg font-bold text-gray-800 uppercase"
+                                          }, item.title), React.createElement("div", {
+                                            className: "flex flex-col md:flex-row"
                                           }, React.createElement("img", {
-                                                className: "object-cover w-56 h-52 mt-2",
+                                                className: "w-24 h-20 m-2",
                                                 alt: item.img.alt,
                                                 src: item.img.src
-                                              })));
-                          })))));
+                                              }), React.createElement("p", {
+                                                className: "mt-1 text-sm text-gray-600"
+                                              }, item.description))));
+                      }))));
 }
 
 var make = MyWork;
