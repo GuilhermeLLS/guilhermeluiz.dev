@@ -63,7 +63,7 @@ module TwitterIcon = {
 let make = (~theme: string) => {
   <div className="flex items-center -mx-2">
     <TwitterIcon url="https://twitter.com/gluizls" theme />
-    <LinkedinIcon url="https://www.linkedin.com/in/guilherme-luiz-lara-silva-9a7158162/" theme />
+    <LinkedinIcon url="https://www.linkedin.com/in/guilherme-luiz-9a7158162/" theme />
     <GitHubIcon url="https://github.com/GuilhermeLLS" theme />
   </div>
 }
