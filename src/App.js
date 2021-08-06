@@ -7,12 +7,10 @@ function $$default(props) {
   var router = Router.useRouter();
   var content = React.createElement(props.Component, props.pageProps);
   var match = router.route;
-  switch (match) {
-    case "/" :
-    case "/blog" :
-        return content;
-    default:
-      return React.createElement("h1", undefined, "page not found");
+  if (match === "/") {
+    return content;
+  } else {
+    return React.createElement("h1", undefined, "page not found");
   }
 }
 

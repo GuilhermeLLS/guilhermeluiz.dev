@@ -2,7 +2,6 @@
 
 import * as Curry from "bs-platform/lib/es6/curry.js";
 import * as React from "react";
-import Link from "next/link";
 import * as PageContext from "../../contexts/PageContext/PageContext.js";
 import * as IconsSection from "../IconsSection/IconsSection.js";
 import * as React$1 from "@headlessui/react";
@@ -46,22 +45,21 @@ function Introduction(Props) {
                                                 return "mywork";
                                               }));
                                 })
-                            }, "My Work"), React.createElement(Link, {
-                              href: "/blog",
-                              children: React.createElement("a", {
-                                    className: "text-xl font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4"
-                                  }, "Blog")
-                            })), React.createElement(IconsSection.make, {
+                            }, "My Work"), React.createElement("a", {
+                              className: "text-xl font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4",
+                              href: "https://dev.to/guilhermells",
+                              target: "_blank"
+                            }, "Blog")), React.createElement(IconsSection.make, {
                           theme: "light"
                         }))));
 }
 
-var Link$1;
+var Link;
 
 var make = Introduction;
 
 export {
-  Link$1 as Link,
+  Link ,
   make ,
   
 }

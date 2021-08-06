@@ -37,12 +37,12 @@ let make = () => {
             onClick={_ => setCurrentPage(_ => #mywork)}>
             {React.string("My Work")}
           </span>
-          <Link href="/blog">
-            <a
-              className="text-xl font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4">
-              {React.string("Blog")}
-            </a>
-          </Link>
+          <a
+            target="_blank"
+            href="https://dev.to/guilhermells"
+            className="text-xl font-medium text-white dark:text-gray-700 hover:text-indigo-500 md:hover:text-indigo-100 dark:hover:text-indigo-400 m-4">
+            {React.string("Blog")}
+          </a>
         </div>
         <IconsSection theme="light" />
       </Transition>

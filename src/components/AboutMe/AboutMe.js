@@ -22,7 +22,7 @@ function AboutMe(Props) {
                       rel: "nofollow noreferrer"
                     }, "Github"), " or/and ", React.createElement("a", {
                       className: "text-indigo-500 font-bold",
-                      href: "https://github.com/GuilhermeLLS",
+                      href: "https://www.notion.so/Resume-Guilherme-Luiz-351c0ac5daee4a3fbac14ba76759f78b",
                       rel: "nofollow noreferrer"
                     }, "Resume"), ", visit the ", React.createElement("code", {
                       className: "text-indigo-500 bg-indigo-100 p-1"

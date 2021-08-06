@@ -70,7 +70,7 @@ function IconsSection(Props) {
                   url: "https://twitter.com/gluizls",
                   theme: theme
                 }), React.createElement(IconsSection$LinkedinIcon, {
-                  url: "https://www.linkedin.com/in/guilherme-luiz-lara-silva-9a7158162/",
+                  url: "https://www.linkedin.com/in/guilherme-luiz-9a7158162/",
                   theme: theme
                 }), React.createElement(IconsSection$GitHubIcon, {
                   url: "https://github.com/GuilhermeLLS",

@@ -25,7 +25,6 @@ let default = (props: props): React.element => {
   let content = React.createElement(component, pageProps)
 
   switch router.route {
-  | "/blog" => content
   | "/" => content
   | _ => <h1> {React.string("page not found")} </h1>
   }
