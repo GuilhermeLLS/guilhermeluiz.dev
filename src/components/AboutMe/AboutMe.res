@@ -24,7 +24,7 @@ let make = () =>
       {React.string(" or/and ")}
       <a
         className="text-indigo-500 font-bold"
-        href="https://www.notion.so/Resume-Guilherme-Luiz-351c0ac5daee4a3fbac14ba76759f78b"
+        href="https://maize-attack-5cd.notion.site/Resume-Guilherme-Luiz-351c0ac5daee4a3fbac14ba76759f78b"
         rel="nofollow noreferrer">
         {React.string("Resume")}
       </a>
